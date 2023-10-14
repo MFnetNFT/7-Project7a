@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="./flightsurety.css"> -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+
+        <div class="row top-20">
+            <div class="col-sm-4">
+                <label class="form">Flight:</label>
+                <select id="select-flight-oracle"></select>
+                <button class="btn btn-primary btn-left-margin" id="submit-oracle">Submit to Oracles</button>
+            </div>
+        </div>
+
+        <div class="row top-20">
+            <div class="col-sm-12">
+                <h2>Passenger Actions</h2>
+            </div>
+            <div class="col-sm-2">
+                <label>Choose a flight:</label>
+                <select id="select-flight"></select>
+            </div>
+            <div class="col-sm-4">
+                <label>Choose a passenger:</label>
+                <select id="select-passenger"></select>
+            </div>
+        </div>
+        <div class="row top-20">
+            <div class="col-sm-8">
+                <button class="btn btn-primary btn-left-margin" id="purchase-insurance">Purchase Insurance</button>
+                <button class="btn btn-primary btn-left-margin" id="check-status">Check Status</button>
+                <button class="btn btn-primary btn-left-margin" id="withdraw-funds">Withdraw Funds</button>
+            </div>
+        </div>
+ 
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
